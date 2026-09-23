@@ -1,0 +1,11 @@
+{
+  "name": "pay-attention-editorial",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config vite.config.js"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

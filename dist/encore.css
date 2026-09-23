@@ -1,0 +1,170 @@
+/* Editorial foundation. Six interventions, separated by quiet reading space. */
+:root{--paper:#f4f2ec;--ink:#1c1d1c;--orange:#c94224;--blue:#294ad8;--line:#cecdc6;--acid:#dcf66d;--hand:'Caveat',cursive}
+body{background-color:var(--paper);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23000' opacity='.025' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E");line-height:1.6}
+main,header,footer{max-width:1600px;margin-inline:auto}
+::selection{background:#dce4fc;color:var(--ink)}
+.skip-link{position:absolute;left:20px;top:-100px;z-index:10;background:var(--paper);padding:12px 18px;border:1px solid var(--ink)}
+.skip-link:focus{top:12px}
+header{padding-inline:7%;height:auto;min-height:88px;gap:24px;font-size:14px}
+.brand{letter-spacing:-.04em;font-size:22px;line-height:1.2}
+header nav.header-note{font-size:12px;letter-spacing:.08em}
+header>a:last-child{font-size:14px}
+header a{padding-block:10px}
+.eyebrow,.section-top,.report-mast,.finding-meta{font-family:monospace;font-size:12px;letter-spacing:.06em;line-height:1.5}
+h1,h2,.finding h3{line-height:1.02}
+h2{font-size:clamp(52px,6.3vw,90px)}
+button:focus-visible,a:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+button{min-height:44px}
+.dark-button{white-space:normal;font-size:14px;min-height:48px;box-shadow:none}
+.type-toggle{min-height:44px}
+
+/* 1. One altered word in an otherwise aligned editorial headline. */
+.hero{padding:38px 7% 42px}
+.hero h1{font-size:clamp(52px,8.65vw,134px);margin:64px 0 38px;letter-spacing:-.025em;line-height:1.1;font-weight:800}
+.hero h1>span{display:block}
+.hero h1 em{font-family:var(--hand);font-size:.97em;display:inline-block;font-weight:600;line-height:1.05;letter-spacing:-.05em;color:var(--orange);transform:rotate(-3deg);transform-origin:center}
+.hero-bottom{gap:30px}
+.hero-bottom p{font-size:16px}
+.round-link{font-size:14px;gap:18px}
+.round-link span{background:none;border:1px solid var(--line);width:48px;height:48px;font-size:24px;transition:transform .2s}
+.round-link:hover span{transform:translateY(3px)}
+.hero-index{font:12px/1.5 monospace;letter-spacing:.06em;color:#666;margin-top:40px}
+.photo-section{padding:30px 5% 75px}
+.section-top{margin-bottom:18px}
+.postcard{border:0;box-shadow:none;transform:none}
+.postcard-mark{font:12px/1.4 monospace;letter-spacing:.03em;left:20px;bottom:18px;padding:5px 8px;background:#171717c9;color:white}
+.photo-caption{margin-top:24px}
+.photo-caption>span{font-size:12px;line-height:1.6;color:#5b5b56}
+.postcard-actions{gap:22px}
+
+/* 2. Clean lettering recedes behind the umbrella; most of the image is untouched. */
+#photo-frame img{height:auto;width:100%;aspect-ratio:3/2;object-fit:contain}
+.moment-card:after{display:none}
+#photo-frame .moment-type{inset:0;display:block;line-height:1;font-family:'Barlow Condensed',Impact,sans-serif;font-weight:700;letter-spacing:-.02em;z-index:1}
+.moment-type>span{position:absolute;display:block}
+.moment-type .moment-small{top:24%;left:24%;margin:0;font:clamp(12px,1.1vw,17px)/1.2 monospace;letter-spacing:.15em;color:#fff}
+.moment-main{top:27%;left:23%;font-size:clamp(55px,14.3vw,220px);color:#fff;line-height:.9;z-index:1;letter-spacing:-.025em}
+#photo-frame .subject-cutout{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:2;clip-path:polygon(47.7% 44%,48.4% 42.2%,50.1% 40.5%,51.8% 39.7%,53.8% 39.9%,56.3% 40.7%,57.8% 42%,58.1% 43%,53.2% 44.3%,53.3% 47%,54% 48.6%,53.7% 52%,53.2% 55%,53.8% 61.5%,55% 66.7%,54.1% 68.2%,51.1% 69.3%,50.8% 67%,48% 66.5%,47.2% 64%,49.4% 58%,49.6% 51%,50.4% 47%,50.8% 44%)}
+.moment-type .moment-last{right:6%;bottom:9%;margin:0;font-size:clamp(22px,3.2vw,49px);text-align:right;line-height:1;letter-spacing:.01em;color:#fff;z-index:3;text-shadow:0 1px 5px #000}
+.economy{margin-top:0;padding:75px 9%;border-top:1px solid var(--line)}
+.economy h2{margin-top:40px}
+.editorial-grid{gap:10%;margin:32px 0 48px}
+.editorial-grid .large-copy{font-size:26px;line-height:1.45}
+.exchange{padding-block:24px}
+.exchange strong{font-size:25px}
+.minute{margin-top:48px}
+.minute-bar span:first-child{background:#e4a28f}
+.minute-bar span:nth-child(2){background:#dce2f2}
+.minute-bar span:nth-child(3){background:var(--blue)}
+.postcard-section{padding:60px 7% 75px;background:transparent}
+.postcard-below{margin-top:25px}
+.postcard-below p{font-size:clamp(20px,2.1vw,29px);line-height:1.4}
+.asset-note{font-size:12px;color:#666}
+
+/* 3. A single narrow signal strip; the people keep the rest of the frame. */
+.crowd-type{inset:0}
+.crowd-type h2{font-family:'Barlow Condensed',Impact,sans-serif;font-size:clamp(21px,4vw,62px);font-weight:700;line-height:1.1;letter-spacing:-.015em}
+.crowd-type h2 .crowd-strip{position:absolute;top:12%;left:4%;display:inline-block;background:var(--acid);padding:.12em .3em .17em;color:var(--ink)}
+.attention-report{background:var(--paper);padding:0}
+.report-mast{background:transparent;color:var(--ink);padding:22px 7%;border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.report-cover{padding:62px 7% 54px}
+.report-cover h2{font-size:clamp(56px,8vw,118px);line-height:.98;max-width:850px}
+.report-sticker{position:static;display:block;background:none;border:0;padding:0;margin:0 0 25px;transform:none;font:12px/1.5 monospace;letter-spacing:.08em}
+.report-sticker br{display:block}
+.report-deck{font-size:25px;margin-top:30px}
+.report-scope{font-size:16px;line-height:1.7;max-width:700px}
+.report-ribbon{background:#e9ecf3;border-bottom:1px solid var(--line);padding:18px 7%;font:14px/1.6 monospace;letter-spacing:0}
+.findings-grid{margin-inline:7%;grid-template-columns:1fr 1fr;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.finding{padding:36px 32px 28px;border-color:var(--line);background:#fbfaf6;color:var(--ink);box-shadow:none;transform:none}
+.finding:nth-child(odd){border-right:1px solid var(--line)}
+.finding h3{font-size:clamp(38px,4.3vw,60px);font-weight:700;line-height:1.02;letter-spacing:-.02em}
+.finding-meta{font-size:12px;letter-spacing:0}
+.finding-number{font-size:clamp(78px,8.7vw,128px);line-height:1;letter-spacing:-.025em;margin:8px 0 28px}
+.finding-number span{font-size:13px;letter-spacing:.05em;line-height:1.5}
+.finding-orange{background:#f4e7df}
+.finding-care{background:#eceee8}
+.finding-blue{background:#e7ecf8}
+.finding-blue .finding-number{color:var(--blue)}
+.finding-lime{background:#fbfaf6}
+.finding .finding-take{font-size:18px;line-height:1.5;border-color:var(--line);padding-top:20px}
+.finding details{border-color:var(--line)}
+.finding details p{font-size:16px}
+.finding details a{font-size:14px}
+.finding summary{padding-block:3px}
+.care-bars b{background:var(--blue);font-size:22px}
+
+/* 4. One margin rule leads into the qualified workplace statistic. */
+#finding-05 .finding-number{position:relative;padding-left:14px}
+#finding-05 .finding-number:before{content:'';position:absolute;left:-49px;top:47%;width:47px;height:2px;background:var(--orange)}
+.report-after{padding:78px 9%;background:transparent;color:var(--ink)}
+.report-after>span{font:12px/1.6 monospace;letter-spacing:.06em}
+.report-after blockquote{font-size:clamp(28px,4vw,56px);line-height:1.2;letter-spacing:-.045em;font-weight:500;margin-block:35px}
+.report-after blockquote em{color:var(--blue)}
+.report-after p{color:#62625e;font-size:14px}
+.report-method{padding:24px 7%;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.report-method p{font-size:16px}
+.lab{background:#e9ecf0;color:var(--ink);padding:65px 7% 60px}
+.lab h2{font-size:clamp(52px,6.3vw,90px);margin-top:35px}
+.lab h2 em{font-family:inherit;color:var(--blue)}
+.lab-intro{margin:25px 0 35px;font-size:16px}
+.game-tabs{border-bottom:1px solid var(--line);gap:0}
+.game-tabs button{color:#505357;font-size:14px;border-bottom:3px solid transparent;min-height:62px;padding:16px}
+.game-tabs button[aria-selected=true]{background:#fff;color:var(--blue);border-bottom-color:var(--blue)}
+#game{background:#fff;border:1px solid var(--line);border-top:0;box-shadow:none;min-height:420px}
+.method-note{color:#555b62;font-size:14px;margin-top:25px}
+.game-head span,.game-progress,.result-metrics span{font-size:14px}
+.quiet-postcard{background:transparent;padding-top:80px}
+.presence-card:after{background:linear-gradient(90deg,#0003,transparent 60%)}
+.presence-type{top:13%;left:7%;color:var(--paper)}
+.presence-type h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(42px,7.8vw,115px);line-height:.95;letter-spacing:-.065em}
+.presence-type h2 span:last-child{font-style:italic;margin-top:5px}
+.presence-type p{font-size:clamp(14px,1.5vw,21px);line-height:1.5;letter-spacing:0;margin-top:30px}
+
+/* 5. Only the word 'give' is handwritten in this quiet serif photograph. */
+.presence-type p em{font-family:var(--hand);font-size:1.5em;line-height:1;font-style:normal;color:#f8b69b;display:inline-block;transform:rotate(-4deg)}
+.receipt-section{background:transparent;border-top:1px solid var(--line);grid-template-columns:minmax(0,1fr) minmax(290px,380px);gap:12%;padding:85px 9%}
+.receipt-intro h2{font-size:clamp(64px,7vw,100px)}
+.receipt-intro .privacy{font-size:14px;color:#62625e}
+
+/* 6. A receipt placed by hand, with a restrained physical offset. */
+.receipt-paper{background:#fff;border-top:3px solid var(--blue);transform:rotate(1.25deg);box-shadow:0 5px 18px #00000009;padding:30px}
+.receipt-brand{font-size:34px}
+.receipt-row{font-size:14px;overflow-wrap:anywhere}
+.receipt-total strong{font-size:28px}
+.ending{padding:85px 7% 65px;background:transparent;border-top:1px solid var(--line)}
+.ending h2{font-size:clamp(72px,9vw,128px);line-height:.98}
+.ending .ending-invitation{font-size:clamp(23px,2.5vw,34px);line-height:1.45}
+.ending>span{font:12px/1.6 monospace;letter-spacing:.05em}
+.afterword{font-size:clamp(21px,2vw,28px)}
+footer{padding:36px 7%;border-top:1px solid var(--line)}
+footer p,footer details{font-size:14px}
+footer .footer-links{margin-top:8px}
+footer .footer-links a{text-underline-offset:3px}
+
+input:focus-visible,summary:focus-visible,[tabindex="-1"]:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+.recall label{min-height:44px;padding-block:8px}
+.finding summary,.report-method summary,footer summary{min-height:44px;display:list-item;padding-block:10px}
+
+/* Quiet utility pages reuse the project voice without imitating the exhibition. */
+.utility-page{min-height:calc(100vh - 88px);padding:70px 9% 90px;border-bottom:1px solid var(--line)}
+.utility-page .utility-kicker{font:12px/1.6 monospace;letter-spacing:.06em}
+.utility-page h1{font-size:clamp(62px,9vw,128px);line-height:.95;margin:34px 0 40px}
+.utility-page .utility-copy{max-width:760px}
+.utility-page h2{font-size:clamp(32px,4vw,52px);line-height:1.05;margin:48px 0 16px}
+.utility-page p,.utility-page li{font-size:17px;line-height:1.75}
+.utility-page a{text-decoration:underline;text-underline-offset:4px}
+.utility-page .dark-button{text-decoration:none;display:inline-block;margin-top:24px}
+
+@media(max-width:900px){
+header{gap:16px;padding-inline:6%}.header-note{letter-spacing:0}header nav{gap:14px}.receipt-section{gap:6%;padding-inline:6%}.finding{padding:30px 24px}.finding-meta{flex-direction:column;gap:3px}.finding-meta span:last-child{text-align:left}#finding-05 .finding-number:before{left:-39px;width:37px}.findings-grid{margin-inline:6%}
+}
+@media(max-width:700px){
+header{padding:18px 6%;min-height:76px;flex-wrap:wrap;gap:8px 18px}.brand{font-size:20px}header>a:last-child{font-size:14px;margin-left:auto}header nav.header-note{display:flex;order:3;width:100%;font-size:12px;gap:24px}header nav a:last-child{display:block}header a{padding-block:5px}
+.eyebrow,.section-top{font-size:12px;letter-spacing:0;gap:12px}.eyebrow span:last-child{max-width:145px}.hero{padding:28px 6% 35px}.hero h1{font-size:10.2vw;line-height:1.16;margin:45px 0 30px}.hero h1 em{font-size:1.02em}.hero-bottom{align-items:flex-start;flex-wrap:wrap;gap:12px}.hero-bottom p{font-size:16px;margin:0}.round-link{font-size:14px;gap:12px}.round-link span{width:42px;height:42px}.hero-index{margin-top:30px;font-size:12px;letter-spacing:0}
+.photo-section{padding:25px 5% 45px}.photo-caption{gap:16px;margin-top:20px}.postcard-actions{flex-wrap:wrap;gap:12px 22px}.postcard-mark{font-size:12px;letter-spacing:0;bottom:8px;left:8px;padding:4px 6px;max-width:90%}.moment-type .moment-small{font-size:12px;top:22%;left:24%}.moment-main{font-size:14.7vw}.moment-type .moment-last{font-size:4.3vw;bottom:19%;right:5%}.economy{padding:45px 6%}.economy h2{font-size:13vw}.editorial-grid{grid-template-columns:1fr;gap:0;margin:20px 0 30px}.editorial-grid .large-copy{font-size:24px}.exchange{grid-template-columns:1fr 16px 1fr 16px 1fr;gap:5px}.exchange strong{font-size:18px}.exchange span{font-size:14px;overflow-wrap:anywhere}.exchange div{gap:9px}.exchange b{font-size:17px}.minute-label{font-size:14px;gap:20px}.minute-bar span{font-size:12px}.minute{margin-top:35px}
+.postcard-section{padding:35px 5% 45px}.crowd-type h2{font-size:4.65vw}.crowd-type h2 .crowd-strip{top:12%;left:4%;padding:.16em .3em}.postcard-below p{font-size:23px}.postcard-below{margin-top:22px;gap:12px}.report-mast{font-size:12px;letter-spacing:0;padding:20px 6%;gap:8px}.report-cover{padding:36px 6%}.report-cover h2{font-size:12vw}.report-sticker{font-size:12px;margin-bottom:25px;padding:0;transform:none}.report-deck{font-size:23px}.report-scope{font-size:16px}.report-ribbon{font-size:13px;padding:17px 6%}.findings-grid{grid-template-columns:1fr;margin-inline:6%}.finding{padding:28px 24px}.finding:nth-child(odd){border-right:0}.finding h3{font-size:46px}.finding-number{font-size:104px}.finding-meta{flex-direction:row;flex-wrap:wrap;justify-content:space-between;gap:8px}.finding .finding-take{font-size:18px}.finding-number span{font-size:13px}#finding-05 .finding-number:before{left:-38px;width:36px}.report-after{padding:50px 6%}.report-after blockquote{font-size:7.6vw}.report-method{padding:22px 6%}
+.lab{padding:45px 6%}.lab h2{font-size:12vw}.game-tabs button{font-size:14px;line-height:1.4;padding:13px 9px}.game-head{flex-wrap:wrap;gap:10px}.game-head span{max-width:none;text-align:left}#game{padding:24px 16px}.search-board.busy button{font-size:12px}.result-metrics{gap:20px}.colour-options button{padding:12px 18px}.method-note{font-size:14px}
+.quiet-postcard{padding-top:50px}.presence-type{top:12%;left:7%}.presence-type h2{font-size:9vw}.presence-type p{font-size:14px;margin-top:15px;line-height:1.4}.presence-type p em{font-size:1.45em}.receipt-section{grid-template-columns:1fr;gap:35px;padding:50px 7% 60px}.receipt-intro h2{font-size:18vw;margin-block:26px}.receipt-paper{padding:26px;transform:rotate(1deg);max-width:380px}.receipt-brand{font-size:32px}.receipt-row{font-size:14px}.ending{padding:55px 6% 45px}.ending h2{font-size:18vw}.ending .ending-invitation{font-size:26px}.ending>span{font-size:12px;letter-spacing:0}.afterword{font-size:23px}footer{padding:30px 6%}
+}
+@media(max-width:380px){.game-tabs{flex-direction:column}.game-tabs button{min-height:44px}.exchange{grid-template-columns:1fr}.exchange b{transform:rotate(90deg);justify-self:start;padding:0 10px}.exchange div{padding-block:8px}.presence-type p{font-size:12px}.postcard-mark{font-size:10px}.receipt-paper{padding:22px}.receipt-brand{font-size:30px}.report-after blockquote{font-size:27px}.utility-page{padding:48px 6% 70px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.round-link span,.postcard-type,.ending,.ending h2{transition:none}.postcard-type.words-away{filter:none}}
