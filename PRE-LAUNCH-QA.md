@@ -1,10 +1,10 @@
 # PAY ATTENTION. Pre-launch QA
 
-Audit date: 23 September 2026
+Audit date: 24 September 2026
 
 ## Outcome
 
-The site is deployed as an owner-private production version. The central idea, editorial structure, six controlled visual interventions, factual report content and major interaction model have been preserved.
+Version 1.1 is packaged as a complete static project. The central idea, editorial structure, six controlled visual interventions, factual report content and major interaction model are preserved.
 
 ## Passed checks
 
@@ -21,7 +21,7 @@ The site is deployed as an owner-private production version. The central idea, e
 - Six report findings remain present.
 - Report numbers, dates, populations, source notes, limitations, evidence disclosures and reflection prompts were not changed.
 - The report still states that it is desk research, not an original representative survey or attention-span assessment.
-- AI-generated scenes remain clearly labelled as fictional illustrations.
+- The main editorial flow no longer repeats production labels. A concise generative-AI disclosure remains in Privacy & Site Use, and the report methodology still states that the scenes are illustrations rather than research records.
 - PIB, Ormax, Microsoft, DataReportal, PsyToolkit Stroop and PsyToolkit SART links resolved during the audit.
 - The LinkedIn profile URL is well formed. Automated retrieval was blocked by LinkedIn, so its final availability should be spot-checked in a normal signed-out browser.
 - Global text search found no em dash or en dash characters.
@@ -83,17 +83,16 @@ The site is deployed as an owner-private production version. The central idea, e
 - All source image paths resolve to files in `dist`.
 - The main navigation, report anchor, playground anchor, receipt anchor and footer utility link resolve locally.
 - Source links use HTTPS and open separately with `noopener` protection.
-- The production home page and site-use page returned HTTP 200 after deployment.
-- Production `robots.txt`, `sitemap.xml`, the social preview and the 768 px responsive street image returned HTTP 200.
-- An unknown production path returned HTTP 404 with the custom project page.
-- The production service screenshot shows the intended desktop hero, loaded typefaces, correct palette, clean hierarchy and updated receipt arrow.
+- The earlier Railway deployment returned the full site during this audit.
+- The intended custom domain currently returns a 502 certificate hostname mismatch. This is an external hosting configuration issue, not a missing file in the package.
+- Canonical, Open Graph, Twitter, robots and sitemap URLs now use the intended custom domain.
 - Optimized photographic files were visually inspected after conversion. No damaging compression artefacts were found.
 
 ### Browser regression basis
 
-- The most recent full interaction suite, completed 18 September 2026, covered desktop, 305 px, 375 px and 753 px content widths, all three exercises, photo recall, postcard toggles, report disclosures, keyboard tabs, receipt updates, PNG export and the quiet-ending timer.
-- This pass did not alter exercise scoring, timers, source data or the major interaction model. The JavaScript changes were limited to result focus, receipt refresh frequency and a more reliable download-link activation.
-- The final production shell was visually verified from the hosting service screenshot. The owner-private sign-in gate prevented an identity-less cloud browser from repeating the full viewport suite without an interactive account sign-in. The site audience was not changed to work around that boundary.
+- The full interaction suite completed 18 September 2026 covered desktop, 305 px, 375 px and 753 px content widths, all three exercises, photo recall, postcard toggles, report disclosures, keyboard tabs, receipt updates, PNG export and the quiet-ending timer.
+- This pass changed visible strings only. Exercise scoring, timers, state, source data and the interaction model were not changed.
+- JavaScript syntax and source-level responsive checks passed. A local Chromium executable was unavailable for a fresh automated viewport run, so the previous full suite remains the browser regression basis.
 
 ## Not applicable
 
@@ -108,10 +107,11 @@ The site is deployed as an owner-private production version. The central idea, e
 
 ## Remaining external actions
 
-1. The ChatGPT Site remains owner-private. Change the audience to public only when you are ready for public launch.
-2. If a custom domain is connected, configure its DNS and then update the canonical URL, `og:url`, social-image URL and sitemap locations to that final hostname.
-3. Open the LinkedIn credit once in a normal signed-out browser because LinkedIn blocked automated retrieval during this audit.
-4. Run a brief physical-device spot check on at least one iPhone and one Android device before a promoted launch. Automated viewport checks cannot reproduce every mobile font and browser behaviour.
-5. If analytics are added later, choose a privacy-conscious service, document the fields collected and reassess consent requirements before enabling it.
+1. Fix the TLS or custom-domain mapping for payattention.abhinandantejaswi.com. The domain returned a certificate hostname mismatch on 24 September 2026.
+2. Deploy or commit this version to the GitHub repository and Railway service that serve the public custom domain.
+3. The separate ChatGPT Site remains owner-private. Change that audience only if you want to use it as another public host.
+4. Open the LinkedIn credit once in a normal signed-out browser because LinkedIn blocked automated retrieval during this audit.
+5. Run a brief physical-device spot check on at least one iPhone and one Android device before a promoted launch.
+6. If analytics are added later, choose a privacy-conscious service, document the fields collected and reassess consent requirements before enabling it.
 
-No Railway, email service, database or API configuration is required for this static microsite.
+No email service, database, API credential or application runtime is required.

@@ -1,4 +1,4 @@
-# PAY ATTENTION · website files
+# PAY ATTENTION · website files · v1.1
 
 This is a static website: HTML + CSS + JavaScript + images. No Python, npm install, database, payment service or runtime AI API is required.
 
@@ -28,13 +28,13 @@ The contents of `dist/` are the current production output. Its HTML, CSS, JavaSc
 
 Open the extracted folder in VS Code. Edit content in `index.html`, visual styling in `encore.css` (with base components in `style.css`), and behaviours in `app.js`. Save and refresh your browser. Changes on your computer do not update the hosted site automatically.
 
-## Publish using the existing ChatGPT Site
+## Current hosting status
 
-The site is already hosted at https://pay-attention-exhibition.abhinandan-tejaswi.chatgpt.site . The present publication remains access-limited until you change who can visit.
+The intended public URL is https://payattention.abhinandantejaswi.com/. On 24 September 2026 it returned a certificate hostname mismatch. The earlier Railway URL, https://pay-attention-production-070c.up.railway.app/, still returned the site.
 
-Open Sites in ChatGPT, find PAY ATTENTION, select Share, and choose “Anyone on the internet” when you are ready for a public audience. The account currently offers a public access option. Confirm/save the sharing choice if prompted, then test the URL while signed out or in a private browser window. You can also explicitly ask ChatGPT to make this Site public.
+The separate ChatGPT Site at https://pay-attention-exhibition.abhinandantejaswi.chatgpt.site remains owner-private. Its audience was not changed during this pass.
 
-Official walkthrough: https://learn.chatgpt.com/training/walkthroughs/building-a-shareable-site
+Before a promoted launch, deploy this package to the GitHub and Railway setup behind the custom domain, then fix the custom-domain TLS or proxy mapping and test the URL while signed out.
 
 ## Publish elsewhere
 
