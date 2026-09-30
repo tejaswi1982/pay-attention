@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://payattention.abhinandan-tejaswi.com/sitemap.xml
+Sitemap: https://payattention.abhinandantejaswi.com/sitemap.xml
